@@ -1,4 +1,4 @@
-import {StyleSheet, TextInput, View} from 'react-native';
+import {StyleSheet, TextInput} from 'react-native';
 
 interface Props {
   placeHolder: string;
@@ -6,7 +6,7 @@ interface Props {
   onChangeText: (text: string) => void;
   secureTextEntry?: boolean;
 }
-const Input = ({placeHolder, onChangeText, value, secureTextEntry}: Props) => {
+const Input = ({placeHolder, onChangeText, value}: Props) => {
   return (
     <TextInput
       style={styles.input}
